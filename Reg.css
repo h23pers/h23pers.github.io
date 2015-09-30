@@ -1,0 +1,42 @@
+header{ 
+	text-align: center;
+	
+}
+
+li#nav{
+	float: left;
+}
+
+h1#title{
+	border-bottom: 10px Solid Green;
+	font-family: 'Marck Script', cursive;
+	font-size: 4em;
+	margin-bottom: 0px; 
+}
+
+p#pledge{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+
+ol{
+	margin-left: 0px
+}	
+
+li{
+	margin: 0 px;
+	padding: 5px;
+}
+
+h3{
+	margin: 0px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+button{
+	background: green; 
+	color: yellow;
+	
+}
