@@ -1,0 +1,21 @@
+body{
+    background: yellow
+        url("-xoo-xoo.me-www-template-1466-35570d530aa84ee57c8fee907110fb07.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    padding: 15px;
+    border: solid 10px green;
+    border-radius: 20px;
+}   
+
+#navinfo{
+    font-size: 20px;
+    background-color: lightgrey;
+    border-radius: 8px;
+    padding: 8px;
+}
