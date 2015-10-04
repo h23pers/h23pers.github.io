@@ -1,6 +1,5 @@
 body{
-    background: #e1e3e4;
-        /* url("-xoo-xoo.me-www-template-1466-35570d530aa84ee57c8fee907110fb07.jpg"); */
+    background: url('background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
