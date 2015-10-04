@@ -1,6 +1,6 @@
 body{
-    background: yellow
-        url("-xoo-xoo.me-www-template-1466-35570d530aa84ee57c8fee907110fb07.jpg");
+    background: #e1e3e4;
+        /* url("-xoo-xoo.me-www-template-1466-35570d530aa84ee57c8fee907110fb07.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -11,6 +11,7 @@ h1{
     padding: 15px;
     border: solid 10px green;
     border-radius: 20px;
+	margin-top: 45px;
 }   
 
 #navinfo{
@@ -18,4 +19,49 @@ h1{
     background-color: lightgrey;
     border-radius: 8px;
     padding: 8px;
+}
+
+.menu{
+	position: fixed;
+	width: auto;
+    margin-top: -4.8em;
+	background-color: #f3f3f3;
+	padding-top: 14px;
+    left: -0;
+	right: 0;
+	z-index: 1000;
+	border-bottom: solid 1px gray;
+}
+
+nav li{
+	font-size: 18px;
+	font-weight: normal;
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray;
+	margin-right: -5px;
+	width: auto;
+	height: auto;
+	
+}
+
+#siena{
+	padding-bottom: -25px;
+	padding-top: 15px;
+	padding-left:10;
+	padding-right: 10;
+	margin-bottom: -20px;
+	border-left: none;
+	border-right: none;
+}
+li img{
+	margin-bottom: -10px;
+}
+
+nav li:hover{
+	background-color: white;
 }
