@@ -56,9 +56,9 @@ body{
 .menu{
 	position: absolute;
 	width: auto;
-    margin-top: -10.2%;
+    	margin-top: -15%;
 	background-color: #f3f3f3;
-    left: -0;
+    	left: -0;
 	right: 0;
 	z-index: 1000;
 	border-bottom: solid 1px gray;
