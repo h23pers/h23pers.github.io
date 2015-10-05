@@ -1,6 +1,5 @@
 body{
-    background: #e1e3e4;
-        /* url("-xoo-xoo.me-www-template-1466-35570d530aa84ee57c8fee907110fb07.jpg"); */
+    background: url('background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -11,7 +10,7 @@ h1{
     padding: 15px;
     border: solid 10px green;
     border-radius: 20px;
-	margin-top: 9.5%;
+	margin-top: 6%;
 }   
 
 #navinfo{
@@ -24,7 +23,7 @@ h1{
 .menu{
 	position: absolute;
 	width: auto;
-    margin-top: -6.0em;
+    margin-top: -7%;
 	background-color: #f3f3f3;
     left: -0;
 	right: 0;

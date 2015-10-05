@@ -3,21 +3,17 @@ header{
 	
 }
 
-li#nav{
-	float: left;
-}
-
 h1#title{
-	border-bottom: 10px Solid Green;
+	border-bottom: 10px Solid green;
 	font-family: 'Marck Script', cursive;
 	font-size: 4em;
-	margin-bottom: 0px; 
 }
 
 p#pledge{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 2em;
+	text-transform: uppercase;
 }
 
 ol{
@@ -38,5 +34,74 @@ h3{
 button{
 	background: green; 
 	color: yellow;
+	border-radius: 5px;
+	font-size: 20px;
+	text-decoration: none;
+	border-style: hidden;
 	
 }
+
+button:hover{
+	background: yellow;
+	color: green;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: none;
+    background-size: cover;
+    
+}
+
+.menu{
+	position: absolute;
+	width: auto;
+    margin-top: -10.2%;
+	background-color: #f3f3f3;
+    left: -0;
+	right: 0;
+	z-index: 1000;
+	border-bottom: solid 1px gray;
+}
+
+nav li{
+	font-size: 18px;
+	font-weight: normal;
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray;
+	margin-right: -5px;
+	width: auto;
+	height: auto;
+	
+}
+
+#siena{
+	padding-bottom: -25px;
+	padding-top: 15px;
+	padding-left:10;
+	padding-right: 10;
+	margin-bottom: -20px;
+	border-left: none;
+	border-right: none;
+}
+li img{
+	margin-bottom: -10px;
+}
+
+nav li:hover{
+	background-color: white;
+}
+
+input{
+	border: 3px solid green;
+	height:1.5em;
+	border-radius: 5px;
+	background-color:white;
+	border-style:inset;
+}
+
