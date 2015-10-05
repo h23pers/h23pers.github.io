@@ -13,6 +13,7 @@ p#pledge{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 2em;
+	text-transform: uppercase;
 }
 
 ol{
@@ -33,7 +34,16 @@ h3{
 button{
 	background: green; 
 	color: yellow;
+	border-radius: 5px;
+	font-size: 20px;
+	text-decoration: none;
+	border-style: hidden;
 	
+}
+
+button:hover{
+	background: yellow;
+	color: green;
 }
 
 body{
@@ -46,7 +56,7 @@ body{
 .menu{
 	position: absolute;
 	width: auto;
-    margin-top: -15.2%;
+    margin-top: -10.2%;
 	background-color: #f3f3f3;
     left: -0;
 	right: 0;
@@ -86,3 +96,12 @@ li img{
 nav li:hover{
 	background-color: white;
 }
+
+input{
+	border: 3px solid green;
+	height:1.5em;
+	border-radius: 5px;
+	background-color:white;
+	border-style:inset;
+}
+
