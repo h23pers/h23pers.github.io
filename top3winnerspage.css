@@ -28,7 +28,16 @@ body{
  width: 650px;    
  height: 1250px;
  padding: 2%;
+ display: inline-block;
 }
+
+#pic1{
+    margin-right: 5%;
+    border-radius: 15px;
+    border: 5px solid green;
+    display: inline-block;
+}
+
 
 h1{
     margin-top: 5%;
