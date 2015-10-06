@@ -18,7 +18,6 @@
 	</ul>
 	</nav>
     <h1>Survey Form</h1>
-    <h2>IT ISNT OVER YET!!</h2>
 
     <h3>Name:</h3>
     <input type="text" size="30" maxlength="50" name="name">  &nbsp; &nbsp;
@@ -46,15 +45,18 @@
     <input type="text" size="30" maxlength="50" name="name">
 
     <h3>Please Select Which Grade You Are In</h3>
+    <div id="grade">
     <input type="radio" name="grade" value="Senior"> Senior <br>
     <input type="radio" name="grade" value="Junior"> Junior <br>
     <input type="radio" name="grade" value="Sohpomore"> Sophomore <br>
     <input type="radio" name="grade" value="Other"> Other <br>
-
+    </div>
+    
     <h3>If you are planning on attendiog college next year, what school will you probably attend?</h3>
     <input type="text" size="30" maxlength="50" name="college">
 
     <h3>What is your intended major?</h3>
+    <div id="major">
     <input type="checkbox" value="Undecided" name="Undecided"> Undecided</br>
     <input type="checkbox" value="Computer Science" name="Computer Science"> Computer Science </br>
     <input type="checkbox" value="Mathematics" name="Math"> Mathematics</br>
@@ -64,6 +66,8 @@
     <input type="checkbox" value="Humaities (english, history, foreign language" name="Humanities"> Humanities (english, history, foreign language) </br>
     <input type="checkbox" value="Social Science (economics, sociology, political science)" name="Social Science"> Social Science (economics, sociology, political science)</br>
     <input type="checkbox" value="Performing Arts" name="Performing Arts"> Perfomring Arts </br>
-    <input type="checkbox" value="Other, Please Specify" name="Other"> Other, Please Specify
+    <input type="checkbox" value="Other, Please Specify" name="Other"> Other, Please Specify </br>
+    </div>
+    <button name="send"> Send </button>
 </body>
 </html>
