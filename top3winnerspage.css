@@ -25,10 +25,11 @@ body{
 #bigDiv{
  margin-left: 1%;
  background-color: beige;
- width: 650px;    
+ width: 50%;    
  height: 1250px;
  padding: 2%;
  display: inline-block;
+ height: auto;
 }
 
 #pic1{
@@ -67,14 +68,13 @@ h2{
 .menu{
 	position: absolute;
 	width: auto;
-	margin-top: -6.3%;
+    margin-top: -6.5%;
 	background-color: #f3f3f3;
     left: -0;
 	right: 0;
 	z-index: 1000;
 	border-bottom: solid 1px gray;
 }
-
 
 nav li{
 	font-size: 18px;
