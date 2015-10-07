@@ -55,9 +55,9 @@ h2{
 .menu{
 	position: absolute;
 	width: auto;
-	 margin-top: -6.3%;
+	margin-top: -6.3%;
 	background-color: #f3f3f3;
-    	left: -0;
+    left: -0;
 	right: 0;
 	z-index: 1000;
 	border-bottom: solid 1px gray;
