@@ -126,6 +126,8 @@ button{
 
 section{
 	padding: 0px;
+	padding-bottom: 15px;
+	margin-left: 10px;
 	width: 70%;
 	float: left;
 	background-color: white;
@@ -162,6 +164,18 @@ section{
 
 input{
 	display: block;
+}
+
+.entry{
+	width: 50%;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#noShow{
+	display: none;
 }
 
 @media(max-width: 600px){
