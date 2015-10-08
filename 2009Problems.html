@@ -1,35 +1,218 @@
-<header> 	SIENA COLLEGE 
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="Reg.css">
+		<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+		<script src = "fun.js"></script>
+		<link href="index.css" type="text/css" rel="stylesheet"></link>
+        <title>2009 Problems Page</title>
+	<header> 	SIENA COLLEGE 
 				22nd Annual 
 				High School Programming Contest
-				April 3, 2009 </header>
+				April 3, 2009
+	</header>
 
 	<section>
-		<article id="al">
-			<h3> PROBLEM #1:      THE FIFTH POWER</h3>
-			<p> Background Information:	According to the Binomial Theorem: </p>
-			<img src="2009p1.png" alt="problem1">
-			<p> The coefficients of the monomial terms in the expansion of (x + y)<sup>5</sup> are the same as the values 
-			on a corresponding row in Yang Hui’s Triangle.  Yang Hui’s Triangle can be computed by the 
-			following method.</p>
-			<ol>
-				<li> Start with a row with a single 1 </li>
-				<li> On successive rows, add the numbers directly above and to the left/right together to get 
-					the new value.  If a number above in either direction doesn’t exist, substitute a zero for 
-					that missing numbe	</li>	
-			</ol>		
-			<h4> programming Problem:</h4>
-			<p>Input:		Two positive integers X = 10 and Y= 10.<br>
-							Output:	The sum of X and Y raised to the 5th power.<br>
+		<article>
+				<h3> PROBLEM #1:      THE FIFTH POWER</h3>
+				<p> <u>Background Information: </u>	According to the Binomial Theorem: </p>
+				<img src="2009p1.png" alt="problem1">
+				<p> The coefficients of the monomial terms in the expansion of (x + y)<sup>5</sup> are the same as the values 
+				on a corresponding row in Yang Hui’s Triangle.  Yang Hui’s Triangle can be computed by the 
+				following method.</p>
+				<ol>
+					<li> Start with a row with a single 1 </li>
+					<li> On successive rows, add the numbers directly above and to the left/right together to get 
+				the new value.  If a number above in either direction doesn’t exist, substitute a zero for 
+				that missing numbe	</li>	
+				</ol>		
+				<h4> programming Problem:</h4>
+				<p>Input:		Two positive integers X = 10 and Y= 10.<br>
+						Output:	The sum of X and Y raised to the 5th power.<br>
 
 				Example 1:	Input:	1   2<br>
-							Output:	243<br>
+						Output:	243<br>
 	
 				Example 2:	Input:	10   8<br>
-							Output:	1889568<br>
+						Output:	1889568<br>
 
 				Example 3:	Input:	4   7Start with a row with a single 1<br>
-							Output:	161051<br>
-		</article>			
+						Output:	161051<br>
+			    </p>	
+		</article>
+		<article>
+			<h3> PROBLEM #2:      Calendar Days</h3>
+			<p> In the 2009 calendar year, we have 365 days spread over 12 
+			months, from January 1st 2009, through December 31st 2009.  Your job is to convert from a 
+			cardinal number representation of a date (1-01-2009) to a proper ordinal number representation.
+			The rules for the proper suffixes for days are as follows: </p>
+			<ul>
+				<li> If a number ends in 1, </li>
+					<ul> 
+						<li>If that number is a 1, 21, or 31, append a “st” to it.</li>
+						<li>If that number is an 11, append a “th” to it.</li>
+					</ul>
+				<li> If a number ends in 2, </li>
+					<ul> 
+						<li>If that number is a 2 or a 22, append an “nd” to it.</li>
+						<li>If that number is a 12, append a “th” to  it.</li>
+					</ul>
+				<li> If a number ends in 3,
+					<ul> 
+						<li>If that number is a 3 or 23, append a “rd” to it.</li>
+						<li>If that number is a 13, append a “th” to it.</li>
+					</ul>
+			</ul>
+			<h4> Programming Problem:</h4>
+				<p>Input:		Two positive integers representing valid month/day combinations for the
+								year 2009.  The month is first, followed by the date.<br><br>
+						Output:	The date, starting with the month, followed by the day as an ordinal 
+								number, followed by the year 2009.  All values are separated by one space.<br><br>
+
+				Example 1:	Input:	1   2<br>
+						Output:	January 1st 2009<br><br>
+	
+				Example 2:	Input:	10   8<br>
+						Output:	October 8th 2009<br><br>
+
+				Example 3:	Input:	4   7<br>
+						Output:	April 8th 2009<br><br>
+				Example 4:	Input:	12   12<br>
+						Output:	December 12th 2009<br>	<br>	
+			    </p>		
+		</article>
+		<article>
+			<h3> PROBLEM #3:	Reversing Strings </h3>
+				<p><u>Background Information: </u>	A palindrome is a word, phrase, or sentence that reads the same 
+				backwards and forwards. For example, the word “radar” is a palindrome. For this problem,
+				you must write a program that reads a string of characters and prints whether or not the
+				entire string is a palindrome. Your program should ignore all blanks, numbers, 
+				punctuation and any other non-letter characters, and should be case insensitive
+				(i.e., it should not care if characters are capital letters or small letters). 
+				For example "5R3a dAr!" should be considered to be a palindrome. 
+			</p>
+			
+			<h4> Programming Problem:</h4>
+			<p>Input:		One string no greater than 100 characters.<br>
+				Output:	“Yes” if the input string is a palindrome; “No” otherwise.<br><br>
+
+				Example 1:	Input:	radar<br>
+				Output:	Yes<br><br>
+			
+				Example 2:	Input:	radiar<br>
+				Output:	No<br><br>
+
+				Example 3:	Input:	Able was I ere I saw Elba!<br>
+				Output:	No<br><br>
+
+				Example 4:	Input: 	Han     258907=-=5748-087-48n123526537….ah256830<br>
+				Output: 	Yes
+			</p>	
+		</article>		
+	
+		<article>
+			<h3> Problem #5:	Penalty Box </h3>
+			<p>
+				<u>Background Information: </u>	In the sport of hockey, each team has their own penalty box.
+				When a player commits an infraction, they are sent to their team's penalty box for 
+				either 2, 5, or 10 minutes, depending on the severity of their infraction.  Immediately after
+				serving the allotted time, the player is released and let back onto the ice.  
+				Often in penalty-filled contests, penalty boxes can become quite full due to many players 
+				being sent to the penalty box in a short span of time.<br><br>
+
+				During the  offseason, a statistically-minded fan decided to try to determine the most players
+				that could have been in either team's penalty boxes during each game from the previous season
+				(the most in any one penalty box at a time, not in both).  He managed to convert the box
+				scores from each game, which summarize a game's scoring and penalties, into a format that 
+				lists how many penalties were assessed in a game, and for each penalty, which team it was 
+				on (the home team or visiting team), how long it was for (2, 5, or 10 minutes), and when
+				it was issued.  Unfortunately, his conversion scrambled the order of the penalties so they 
+				no longer are listed in chronological order!  He's asked for your help to write a program
+				to read in his descriptions of a game's penalties and determine the maximum number of 
+				players that could have been in any one penalty box during that game.<br><br>
+
+				In writing your program, you may ignore any issues regarding the physical size of the 
+				penalty boxes or the actual number of players on either team; the penalty boxes are large 
+				enough to fit any number of players, and there are at least as many players on each team 
+				as there are penalties assessed to that team.  Finally, you may make no assumptions about 
+				the length of a game due to the possibility of overtimes to settle tie games.<br><br>
+				</p>
+				
+				<h4> Programming Problem:</h4>
+				
+				<p>Input:		The input begins with a single integer N representing the number of games 
+				you are to process.  What follows are the descriptions of the penalties for N games.<br>
+				Each game description begins with an integer M on its own line describing how 
+				many penalties were assessed during that game.  M lines follow, each describing
+				one penalty in the following format:<br>
+				<Strong>C L T</Strong><br>
+				Where <strong>C</strong> is a single character, 'h' or 'v', describing 
+				which team the penalty is on.  <strong>L</strong> is an integer describing the penalty length 
+				(2, 5, or 10).  <strong>T</strong> is an integer describing the time that the penalty occurred
+				as the number of seconds elapsed since the start of the game when the penalty was called.<br><br>
+				Output:	For each game, output a single number on its own line that represents the maximum
+				number of players in either team's penalty box.<br><br>
+				Sample Input:<br>
+				3 <br> 2 <br> h 2 0 <br> a 2 0 <br> 3 <br> h 10 60 <br> a 2 0 <br> h 2 0 <br>
+				3 <br> h 10 120 <br> a 20 <br> h 20 <br><br>
+				Sample output:<br>
+				1 <br> 2 <br> 1
+			</p>
+		</article>	
+		
+		<article>
+			<h3> Problem #5:	Penalty Box </h3>
+			<p> 
+				<u>Background Information  </u>:	Given a rectangular area (called a map) which contains regions 
+				of Mountains (M) and valleys (V), a mountain range is a connected series of Mountainous 
+				areas which are adjacent to the north, south, east or west.  Mountains ranges are not 
+				connection diagonal adjacencies.  Either an M or a V is found at a location (x, y) on the 
+				map, where x is the row (starting at row 0) and y is the column (starting at column 0).<br><br>
+				For example, the following 5x8 map <br><br>
+				MVVVMVVV<br>
+				MVVVVMVV<br>
+				VVVVMVVV<br>
+				VVVMMVVV<br><br>
+				contains 4 separate mountain ranges: {(0,0), (1,0)}, {(0, 4)}, {(4,2), (4,3), (3,3), (3,4),
+				(2,4)} and {(1, 5)}.  The size of a mountain range is the defined as the number of mountains
+				in the range.  In the above example, there are 4 mountain ranges, one of which has size 4,
+				one of which has size 2, and the others having size 1.  Your job is to find the largest size
+				among all mountain ranges on a given map.<br>
+			</p>
+			<h4> Programming Problem:</h4>
+			<p>
+				Input:	An integer r representing the number of rows; an integer c representing a number
+				of columns; r lines of c characters (M’s and V’s). The values r and c will be at most 100.<br>
+				Output:	The size of the largest mountain range.<br><br>
+
+				Example 1:	Input:	8 8<br><br>
+				MVMVVVVM<br>
+				MVVMVMVM<br>
+				MVMMVVMV<br>
+				MVVVMVMV<br>
+				VVVMVMVM<br>
+				V<mark>M</mark>VMVVMM<br>
+				V<mark>MM</mark>VV<mark>M</mark>VM<br>
+				MV<mark>MMMM</mark>VM<br>
+					Output:	8<br><br>
+				
+				Example 2:	Input:	4 6<br><br>
+				MMV<mark>M</mark>V<mark>M</mark><br>
+				MVV<mark>M</mark>V<mark>M</mark><br>
+				V<mark>M</mark>V<mark>M</mark>V<mark>M</mark><br>
+				<mark>MMMMMM</mark><br><br>
+					Output:	13<br><br>
+
+				Example 3:	Input:	2 5<br><br>
+				VVVVV<br>
+				VVVVV<br><br>
+				Output:	0
+			</p>
+		</article>
 	</section>
+	<script src="process.js"></script>
+	</body>
 </html>
 	
