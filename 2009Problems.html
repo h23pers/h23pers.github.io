@@ -1,49 +1,74 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" type="text/css" href="Reg.css">
-		<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Past Problems!</title>
+        <link href="index.css" type="text/css" rel="stylesheet"></link>
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 		<script src = "fun.js"></script>
-		<link href="index.css" type="text/css" rel="stylesheet"></link>
-        <title>2009 Problems Page</title>
-	<header> 	SIENA COLLEGE 
-				22nd Annual 
-				High School Programming Contest
-				April 3, 2009
-	</header>
-
+    </head>
+	<body>
+	<nav>
+	<ul class = "menu">
+		<a href = "https://www.siena.edu"><li id = "siena"><img src = "logo.png"></img></li></a>
+		<a href = "index.html"><li class="button">Home</li></a>
+		<a href = "Reg.html"><li class="button">Register</li></a>
+		<a href = "2009problems.html"><li class="button">Past Problems</li></a>
+		<a href = "photos.html"><li class="button">Photos</li></a>
+		<a href = "survey.html"><li class="button">Survey</li></a>
+		<a href = "top3winnerspage.html"><li class="button">Past Winners</li></a>
+	</ul>
+	</nav>
+	
+	<h1>Past Problems</h1>
+	<h2 id="navinfo">Here are some example problems from previous years!</h2>
 	<section>
-		<article>
-				<h3> PROBLEM #1:      THE FIFTH POWER</h3>
-				<p> <u>Background Information: </u>	According to the Binomial Theorem: </p>
-				<img src="2009p1.png" alt="problem1">
-				<p> The coefficients of the monomial terms in the expansion of (x + y)<sup>5</sup> are the same as the values 
-				on a corresponding row in Yang Hui’s Triangle.  Yang Hui’s Triangle can be computed by the 
-				following method.</p>
-				<ol>
-					<li> Start with a row with a single 1 </li>
-					<li> On successive rows, add the numbers directly above and to the left/right together to get 
+	<div class = "tabs">
+    <ul>
+    <a href = "2000problems.html"><li class = "tab">2000 Problems</li></a>
+	<a href = "2009Problems.html"><li id = "clicked" class = "tab">2009 Problems</li></a>
+	<a href = "2011problems.html"><li class = "tab">2011 Problems</li></a>
+	<a href = "2012problems.html"><li class = "tab">2012 Problems</li></a>
+	<a href = "2013problems.html"><li class = "tab">2013 Problems</li></a>
+	<a href = "2014problems.html"><li class = "tab">2014 Problems</li></a>
+	<a href = "2015problems.html"><li class = "tab">2015 Problems</li></a>
+	</ul>
+	</div>
+	
+	<ul>
+		<input type = "button" value = "Problem 1 ►" id = "prob1" class = "prob"></input>
+		<article style = "display:none;">
+			<h3> PROBLEM #1:      THE FIFTH POWER</h3>
+			<p> Background Information:	According to the Binomial Theorem: </p>
+			<img src="2009p1.png" alt="problem1">
+			<p> The coefficients of the monomial terms in the expansion of (x + y)<sup>5</sup> are the same as the values 
+			on a corresponding row in Yang Hui’s Triangle.  Yang Hui’s Triangle can be computed by the 
+			following method.</p>
+			<ol>
+				<li> Start with a row with a single 1 </li>
+				<li> On successive rows, add the numbers directly above and to the left/right together to get 
 				the new value.  If a number above in either direction doesn’t exist, substitute a zero for 
 				that missing numbe	</li>	
-				</ol>		
-				<h4> programming Problem:</h4>
-				<p>Input:		Two positive integers X = 10 and Y= 10.<br>
-						Output:	The sum of X and Y raised to the 5th power.<br>
+			</ol>		
+			<h4> programming Problem:</h4>
+			<p>Input:		Two positive integers X = 10 and Y= 10.<br>
+				Output:	The sum of X and Y raised to the 5th power.<br><br>
 
 				Example 1:	Input:	1   2<br>
-						Output:	243<br>
+				Output:	243<br><br>
 	
 				Example 2:	Input:	10   8<br>
-						Output:	1889568<br>
+				Output:	1889568<br><br>
 
-				Example 3:	Input:	4   7Start with a row with a single 1<br>
-						Output:	161051<br>
-			    </p>	
+				Example 3:	Input:	4   <br>
+				Output:	161051
+			 </p>					
 		</article>
-		<article>
-			<h3> PROBLEM #2:      Calendar Days</h3>
+		<br></br>
+		<input type = "button" value = "Problem 2 ►" id = "prob2" class = "prob"></input>
+		<article style = "display:none;">
+		<h3> PROBLEM #2:      Calendar Days</h3>
 			<p> In the 2009 calendar year, we have 365 days spread over 12 
 			months, from January 1st 2009, through December 31st 2009.  Your job is to convert from a 
 			cardinal number representation of a date (1-01-2009) to a proper ordinal number representation.
@@ -83,9 +108,11 @@
 						Output:	December 12th 2009<br>	<br>	
 			    </p>		
 		</article>
-		<article>
-			<h3> PROBLEM #3:	Reversing Strings </h3>
-				<p><u>Background Information: </u>	A palindrome is a word, phrase, or sentence that reads the same 
+		<br></br>
+		<input type = "button" value = "Problem 3 ►" id = "prob3" class = "prob"></input>
+		<article style = "display:none;">
+		<h3> PROBLEM #3:	Reversing Strings </h3>
+				<p><u>Background Information:</u>	A palindrome is a word, phrase, or sentence that reads the same 
 				backwards and forwards. For example, the word “radar” is a palindrome. For this problem,
 				you must write a program that reads a string of characters and prints whether or not the
 				entire string is a palindrome. Your program should ignore all blanks, numbers, 
@@ -110,12 +137,13 @@
 				Example 4:	Input: 	Han     258907=-=5748-087-48n123526537….ah256830<br>
 				Output: 	Yes
 			</p>	
-		</article>		
-	
-		<article>
-			<h3> Problem #5:	Penalty Box </h3>
+		</article>
+		<br></br>
+		<input type = "button" value = "Problem 4 ►" id = "prob4" class = "prob"></input>
+		<article style = "display:none;">
+		<h3> Problem #5:	Penalty Box </h3>
 			<p>
-				<u>Background Information: </u>	In the sport of hockey, each team has their own penalty box.
+				<u>Background Information:</u>	In the sport of hockey, each team has their own penalty box.
 				When a player commits an infraction, they are sent to their team's penalty box for 
 				either 2, 5, or 10 minutes, depending on the severity of their infraction.  Immediately after
 				serving the allotted time, the player is released and let back onto the ice.  
@@ -160,12 +188,13 @@
 				Sample output:<br>
 				1 <br> 2 <br> 1
 			</p>
-		</article>	
-		
-		<article>
-			<h3> Problem #5:	Penalty Box </h3>
+		</article>
+		<br></br>
+		<input type = "button" value = "Problem 5 ►" id = "prob5" class = "prob"></input>
+		<article style = "display:none;">
+		<h3> Problem #5:	Penalty Box </h3>
 			<p> 
-				<u>Background Information  </u>:	Given a rectangular area (called a map) which contains regions 
+				<u>Background Information </u>:	Given a rectangular area (called a map) which contains regions 
 				of Mountains (M) and valleys (V), a mountain range is a connected series of Mountainous 
 				areas which are adjacent to the north, south, east or west.  Mountains ranges are not 
 				connection diagonal adjacencies.  Either an M or a V is found at a location (x, y) on the 
@@ -211,8 +240,11 @@
 				Output:	0
 			</p>
 		</article>
+		<br></br>
+	</ul>			
+
 	</section>
+
 	<script src="process.js"></script>
-	</body>
+    </body>
 </html>
-	

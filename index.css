@@ -16,7 +16,12 @@ h1{
 }
 
 h2{
+	font-family: 'Oxygen', sans-serif;
     margin-left: 1%;
+}
+
+h3{
+	font-family: 'Oxygen', sans-serif;
 }
 
 #navinfo{
@@ -100,6 +105,7 @@ nav li:hover{
  height: 1250px;
  padding: 2%;
  display: inline-block;
+ border-radius: 15px;
 }
 
 #pic1{
@@ -138,12 +144,14 @@ button{
 }
 
 section{
+	font-family: 'Oxygen', sans-serif;
 	padding: 0px;
 	padding-bottom: 15px;
 	margin-left: 10px;
 	width: 70%;
 	float: left;
-	background-color: white;
+	background-color: beige;
+	border-radius: 15px;
 }
 
 .tabs{
@@ -154,6 +162,8 @@ section{
 
 
 .tab{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 18px;
 	padding-top: 5px;
 	margin-right: -5px;
 	display: inline-block;
@@ -163,18 +173,9 @@ section{
 	padding-bottom: 7px;
 }
 
-.tab:hover{
-	background-color: white;
+.tab:hover, #clicked{
+	background-color: beige;
 }
-
-#clicked{
-	background-color: white;
-}
-
-.prob, input{
-	display: block;
-}
-
 
 .entry{
 	width: 50%;
@@ -187,7 +188,6 @@ section{
 }
 
 #l{
-
 	position: relative;
 	z-index: 2;
 	top: 18px;
@@ -198,7 +198,6 @@ section{
 }
 
 #r{
-
 	position: relative;
 	z-index: 2;
 	top: 18px;
@@ -211,12 +210,22 @@ section{
 #l:hover, #r:hover{
 	opacity: 0.4;
 	background-color: white;
+	cursor: pointer;
 }
 
 #photos{
 	background-color: #0F0F0F;
 	padding-bottom: 15px;
 	border-radius: 15px;
+}
+
+.prob{
+	text-align: left;
+	font-size: 16px;
+	width: 50%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: transparent;
 }
 
 @media(max-width: 600px){
