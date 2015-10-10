@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Past Problems!</title>
-        <link href="index.css" type="text/css" rel="stylesheet"></link>
+        <link href="style.css" type="text/css" rel="stylesheet"></link>
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 		<script src = "fun.js"></script>
@@ -141,6 +141,46 @@
 		<br></br>
 		<input type = "button" value = "Problem 4 ►" id = "prob4" class = "prob"></input>
 		<article style = "display:none;">
+		<h3> Problem #4:	Gray Codes </h3>
+			<p>
+				<u>Background Information:</u>	Frank Gray was a physicist and researcher at Bell Labs who was awarded many patents for his work related to televisions in the 1930’s and 1940’s.  He is also remembered as the inventor of the Gray code, or reflected binary code, which he patented in 1953 with relation to analog to digital conversion.  The Gray code is a binary numeral system often used in electronics, but with many applications in mathematics.<br><br>
+
+				A Gray code is a way of representing binary integers such that successive values differ from each other in only one bit position.  To convert binary to Gray code, apply the exclusive or operator bit by bit to the binary value and a right-shifted version of itself, for example:<br><br>
+				</p>
+				<img style = "margin-left: 28%;" src = "2009p4.png"></img>
+				<p>
+				A right-shifted binary number is one where all the bits have been moved to the right one binary place, with a zero moving into the leftmost binary place and the original rightmost bit disappearing.  Gray codes can be produced for N bits.  The table below is a four-bit Gray code.  Gray codes of 4 bits are more are not unique.<br>
+				</p>
+				<div id = "div1">
+				<p style = "text-align: center;">Decimal Integer<br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br></p>
+				</div>
+				<div id = "div2">
+				<p style = "text-align: center;">Binary Equivalent<br>0000<br>0001<br>0010<br>0011<br>0100<br>0101<br>0110<br>0111<br>1000<br>1001<br>1010<br>1011<br>1100<br>1101<br>1110<br>1111<br></p>
+				</div>
+				<div id = "div3">
+				<p style = "text-align: center;">Gray Code<br>0000<br>0001<br>0011<br>0010<br>0110<br>0111<br>0101<br>0100<br>1100<br>1101<br>1111<br>1110<br>1010<br>1011<br>1001<br>1000<br></p>
+				</div>
+				<h4><u>Programming Problem:</u></h4>
+				
+				<p>Input:		The value of a positive N less than 10.<br></p>
+				<p>Output:      An N-bit table similar to the one shown above.  One line per table row must be printed.  The formatting of the output should have numbers separated only by a comma.  No headers should be printed.</p>
+				<p><u>Example 1:</u>   <b>Input:</b>   1<br>
+				                <b>Output:</b><br>  0,0,0<br>
+								         1,1,1<br></p>
+								 
+				<p><u>Example 2:</u>   <b>Input:</b>   3<br>
+								<b>Output:<br></b>  0,000,000<br>
+										 1,001,001<br>
+										 2,020,011<br>
+										 3,011,010<br>
+										 4,100,110<br>
+										 5,101,111<br>
+										 6,110,101<br>
+										 7,111,100<br></p>
+		</article>
+		<br></br>
+		<input type = "button" value = "Problem 5 ►" id = "prob5" class = "prob"></input>
+		<article style = "display:none;">
 		<h3> Problem #5:	Penalty Box </h3>
 			<p>
 				<u>Background Information:</u>	In the sport of hockey, each team has their own penalty box.
@@ -187,57 +227,6 @@
 				3 <br> h 10 120 <br> a 20 <br> h 20 <br><br>
 				Sample output:<br>
 				1 <br> 2 <br> 1
-			</p>
-		</article>
-		<br></br>
-		<input type = "button" value = "Problem 5 ►" id = "prob5" class = "prob"></input>
-		<article style = "display:none;">
-		<h3> Problem #5:	Penalty Box </h3>
-			<p> 
-				<u>Background Information </u>:	Given a rectangular area (called a map) which contains regions 
-				of Mountains (M) and valleys (V), a mountain range is a connected series of Mountainous 
-				areas which are adjacent to the north, south, east or west.  Mountains ranges are not 
-				connection diagonal adjacencies.  Either an M or a V is found at a location (x, y) on the 
-				map, where x is the row (starting at row 0) and y is the column (starting at column 0).<br><br>
-				For example, the following 5x8 map <br><br>
-				MVVVMVVV<br>
-				MVVVVMVV<br>
-				VVVVMVVV<br>
-				VVVMMVVV<br><br>
-				contains 4 separate mountain ranges: {(0,0), (1,0)}, {(0, 4)}, {(4,2), (4,3), (3,3), (3,4),
-				(2,4)} and {(1, 5)}.  The size of a mountain range is the defined as the number of mountains
-				in the range.  In the above example, there are 4 mountain ranges, one of which has size 4,
-				one of which has size 2, and the others having size 1.  Your job is to find the largest size
-				among all mountain ranges on a given map.<br>
-			</p>
-			<h4> Programming Problem:</h4>
-			<p>
-				Input:	An integer r representing the number of rows; an integer c representing a number
-				of columns; r lines of c characters (M’s and V’s). The values r and c will be at most 100.<br>
-				Output:	The size of the largest mountain range.<br><br>
-
-				Example 1:	Input:	8 8<br><br>
-				MVMVVVVM<br>
-				MVVMVMVM<br>
-				MVMMVVMV<br>
-				MVVVMVMV<br>
-				VVVMVMVM<br>
-				V<mark>M</mark>VMVVMM<br>
-				V<mark>MM</mark>VV<mark>M</mark>VM<br>
-				MV<mark>MMMM</mark>VM<br>
-					Output:	8<br><br>
-				
-				Example 2:	Input:	4 6<br><br>
-				MMV<mark>M</mark>V<mark>M</mark><br>
-				MVV<mark>M</mark>V<mark>M</mark><br>
-				V<mark>M</mark>V<mark>M</mark>V<mark>M</mark><br>
-				<mark>MMMMMM</mark><br><br>
-					Output:	13<br><br>
-
-				Example 3:	Input:	2 5<br><br>
-				VVVVV<br>
-				VVVVV<br><br>
-				Output:	0
 			</p>
 		</article>
 		<br></br>

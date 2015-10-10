@@ -3,6 +3,7 @@ body{
 	background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+	
 }
 
 h1{
@@ -72,6 +73,14 @@ h3{
 	width: 11%;
 }
 
+#sci{
+	width: 45%;
+	float: right;
+	margin-right: 5%;
+	position: relative;
+	top: -220px;
+}
+
 li img{
 	margin-bottom: -10px;
 }
@@ -106,6 +115,8 @@ nav li:hover{
  padding: 2%;
  display: inline-block;
  border-radius: 15px;
+ box-shadow: 10px 5px 5px black;
+ margin-bottom: 20px;
 }
 
 #pic1{
@@ -152,6 +163,8 @@ section{
 	float: left;
 	background-color: beige;
 	border-radius: 15px;
+	box-shadow: 10px 5px 5px black;
+	margin-bottom: 20px;
 }
 
 .tabs{
@@ -226,22 +239,4 @@ section{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: transparent;
-}
-
-@media(max-width: 600px){
-	#siena img, #siena{
-		
-	}
-	
-	.menu{
-		
-	}
-	
-	.tabs{
-		
-	}
-	
-	.tab{
-		
-	}
 }
